@@ -25,7 +25,11 @@ struct Coordinate {
     var longitude: String
 }
 
-class DataFetchManager {
+protocol DataFetchManageable {
+    func fetch(at location: Coordinate, completion: @escaping (Result<[Venue]>) -> Void)
+}
+
+class DataFetchManager: DataFetchManageable {
 
     func fetch(at location: Coordinate, completion: @escaping (Result<[Venue]>) -> Void) {
         var urlComponents = URLComponents(string: "https://restaurant-api.wolt.fi/v3/venues")

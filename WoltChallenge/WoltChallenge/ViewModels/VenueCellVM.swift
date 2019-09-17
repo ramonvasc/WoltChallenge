@@ -10,10 +10,10 @@ import Foundation
 
 class VenueCellVM {
 
-    private var coreDataManager: CoreDataManager
+    private var coreDataManager: CoreDataManageable
     private var venue: Venue
 
-    init(coreDataManager: CoreDataManager, venue: Venue) {
+    init(coreDataManager: CoreDataManageable, venue: Venue) {
         self.coreDataManager = coreDataManager
         self.venue = venue
     }

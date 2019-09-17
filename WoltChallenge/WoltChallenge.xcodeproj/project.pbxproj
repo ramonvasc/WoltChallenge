@@ -15,7 +15,6 @@
 		FF0CBF5F232FEDB400EB00A3 /* WoltChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF5D232FEDB400EB00A3 /* WoltChallenge.xcdatamodeld */; };
 		FF0CBF61232FEDB500EB00A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF0CBF60232FEDB500EB00A3 /* Assets.xcassets */; };
 		FF0CBF64232FEDB500EB00A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF0CBF62232FEDB500EB00A3 /* LaunchScreen.storyboard */; };
-		FF0CBF6F232FEDB500EB00A3 /* WoltChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF6E232FEDB500EB00A3 /* WoltChallengeTests.swift */; };
 		FF0CBF7A232FEDB500EB00A3 /* WoltChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF79232FEDB500EB00A3 /* WoltChallengeUITests.swift */; };
 		FF0CBF8D232FF23400EB00A3 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF8C232FF23400EB00A3 /* VenueTableViewCell.swift */; };
 		FF0CBF8F232FF3B100EB00A3 /* VenueCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF8E232FF3B100EB00A3 /* VenueCellVM.swift */; };
@@ -25,6 +24,13 @@
 		FF0CBF9923300A7F00EB00A3 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF9823300A7F00EB00A3 /* Venue.swift */; };
 		FF0CBF9B23301B3800EB00A3 /* DataFetchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF9A23301B3800EB00A3 /* DataFetchManager.swift */; };
 		FF0CBF9D23302A6D00EB00A3 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF9C23302A6D00EB00A3 /* Results.swift */; };
+		FF0CBF9F2330C62A00EB00A3 /* VenueVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF9E2330C62A00EB00A3 /* VenueVMTests.swift */; };
+		FF0CBFA12330C64400EB00A3 /* VenueCellVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBFA02330C64400EB00A3 /* VenueCellVMTests.swift */; };
+		FF0CBFA32330C65100EB00A3 /* CoreDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBFA22330C65100EB00A3 /* CoreDataManagerTests.swift */; };
+		FF0CBFA52330C65F00EB00A3 /* DataFetchManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBFA42330C65F00EB00A3 /* DataFetchManagerTests.swift */; };
+		FF0CBFA82330C85F00EB00A3 /* DataFetchManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBFA72330C85F00EB00A3 /* DataFetchManagerMock.swift */; };
+		FF0CBFAA2330C86C00EB00A3 /* CoreDataManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBFA92330C86C00EB00A3 /* CoreDataManagerMock.swift */; };
+		FF0CBFAC2330CC6F00EB00A3 /* VenuesJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBFAB2330CC6F00EB00A3 /* VenuesJson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +68,6 @@
 		FF0CBF63232FEDB500EB00A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF0CBF65232FEDB500EB00A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF0CBF6A232FEDB500EB00A3 /* WoltChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoltChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF0CBF6E232FEDB500EB00A3 /* WoltChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoltChallengeTests.swift; sourceTree = "<group>"; };
 		FF0CBF70232FEDB500EB00A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF0CBF75232FEDB500EB00A3 /* WoltChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoltChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF0CBF79232FEDB500EB00A3 /* WoltChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoltChallengeUITests.swift; sourceTree = "<group>"; };
@@ -75,6 +80,13 @@
 		FF0CBF9823300A7F00EB00A3 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		FF0CBF9A23301B3800EB00A3 /* DataFetchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchManager.swift; sourceTree = "<group>"; };
 		FF0CBF9C23302A6D00EB00A3 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		FF0CBF9E2330C62A00EB00A3 /* VenueVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueVMTests.swift; sourceTree = "<group>"; };
+		FF0CBFA02330C64400EB00A3 /* VenueCellVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCellVMTests.swift; sourceTree = "<group>"; };
+		FF0CBFA22330C65100EB00A3 /* CoreDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTests.swift; sourceTree = "<group>"; };
+		FF0CBFA42330C65F00EB00A3 /* DataFetchManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchManagerTests.swift; sourceTree = "<group>"; };
+		FF0CBFA72330C85F00EB00A3 /* DataFetchManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchManagerMock.swift; sourceTree = "<group>"; };
+		FF0CBFA92330C86C00EB00A3 /* CoreDataManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerMock.swift; sourceTree = "<group>"; };
+		FF0CBFAB2330CC6F00EB00A3 /* VenuesJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesJson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,8 +183,12 @@
 		FF0CBF6D232FEDB500EB00A3 /* WoltChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				FF0CBF6E232FEDB500EB00A3 /* WoltChallengeTests.swift */,
 				FF0CBF70232FEDB500EB00A3 /* Info.plist */,
+				FF0CBFA62330C84D00EB00A3 /* Mocks */,
+				FF0CBF9E2330C62A00EB00A3 /* VenueVMTests.swift */,
+				FF0CBFA02330C64400EB00A3 /* VenueCellVMTests.swift */,
+				FF0CBFA22330C65100EB00A3 /* CoreDataManagerTests.swift */,
+				FF0CBFA42330C65F00EB00A3 /* DataFetchManagerTests.swift */,
 			);
 			path = WoltChallengeTests;
 			sourceTree = "<group>";
@@ -243,6 +259,16 @@
 				FF0CBF9C23302A6D00EB00A3 /* Results.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		FF0CBFA62330C84D00EB00A3 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CBFA72330C85F00EB00A3 /* DataFetchManagerMock.swift */,
+				FF0CBFA92330C86C00EB00A3 /* CoreDataManagerMock.swift */,
+				FF0CBFAB2330CC6F00EB00A3 /* VenuesJson.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,7 +514,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF0CBF6F232FEDB500EB00A3 /* WoltChallengeTests.swift in Sources */,
+				FF0CBFA12330C64400EB00A3 /* VenueCellVMTests.swift in Sources */,
+				FF0CBFA82330C85F00EB00A3 /* DataFetchManagerMock.swift in Sources */,
+				FF0CBFA52330C65F00EB00A3 /* DataFetchManagerTests.swift in Sources */,
+				FF0CBF9F2330C62A00EB00A3 /* VenueVMTests.swift in Sources */,
+				FF0CBFAA2330C86C00EB00A3 /* CoreDataManagerMock.swift in Sources */,
+				FF0CBFA32330C65100EB00A3 /* CoreDataManagerTests.swift in Sources */,
+				FF0CBFAC2330CC6F00EB00A3 /* VenuesJson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

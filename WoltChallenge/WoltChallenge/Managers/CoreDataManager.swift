@@ -9,7 +9,13 @@
 import CoreData
 import UIKit
 
-class CoreDataManager {
+protocol CoreDataManageable {
+    func createData(for venue: Venue)
+    func retrieveVenue(id: String) -> Venue?
+    func update(_ venue: Venue)
+}
+
+class CoreDataManager: CoreDataManageable {
 
     func createData(for venue: Venue) {
 

@@ -16,8 +16,8 @@ protocol VenuesFetchDelegate: class {
 
 class VenueVM: NSObject {
 
-    private var dataFetchManager: DataFetchManager
-    private var coreDataManager: CoreDataManager
+    private var dataFetchManager: DataFetchManageable
+    private var coreDataManager: CoreDataManageable
     private var locationManager: CLLocationManager
     private var currentLocation = 0
     private var locations: [Coordinate] = [
@@ -36,7 +36,7 @@ class VenueVM: NSObject {
     var venues: [Venue] = [Venue]()
     weak var delegate: VenuesFetchDelegate?
 
-    init(dataFetchManager: DataFetchManager, coreDataManager: CoreDataManager, locationManager: CLLocationManager) {
+    init(dataFetchManager: DataFetchManageable, coreDataManager: CoreDataManageable, locationManager: CLLocationManager = CLLocationManager()) {
         self.dataFetchManager = dataFetchManager
         self.coreDataManager = coreDataManager
         self.locationManager = locationManager
@@ -75,7 +75,7 @@ class VenueVM: NSObject {
     }
 }
 
-extension VenueVM: CLLocationManagerDelegate {
+extension VenueVM: CLLocationManagerDelegate { //this delegate requires NSObject
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locationManager.stopUpdatingLocation()

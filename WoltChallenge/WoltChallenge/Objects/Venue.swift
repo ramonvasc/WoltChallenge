@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-struct Venue: Codable {
+struct Venue: Codable, Equatable {
 
     let venueId: String
     let name: String
