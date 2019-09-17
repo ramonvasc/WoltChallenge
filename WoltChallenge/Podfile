@@ -1,0 +1,21 @@
+platform :ios, '12.0'
+
+target 'WoltChallenge' do
+  use_frameworks!
+
+  # Pods for WoltChallenge
+
+  pod 'SnapKit', '~> 5.0'
+  pod 'Kingfisher', '~> 5.7'
+
+  target 'WoltChallengeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'WoltChallengeUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

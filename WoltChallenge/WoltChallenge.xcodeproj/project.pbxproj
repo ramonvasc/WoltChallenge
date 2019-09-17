@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D5B2107AAF864FF19E1158E /* Pods_WoltChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887E3721A278736DF426EDF0 /* Pods_WoltChallengeUITests.framework */; };
+		B1275777F28426BD01210D2C /* Pods_WoltChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF4AB9BC1FCE6E00F5C102F /* Pods_WoltChallenge.framework */; };
+		C2B54C86DA7D77C7AD2F7B51 /* Pods_WoltChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43521B3A7F978C3E575E4A0 /* Pods_WoltChallengeTests.framework */; };
+		FF0CBF57232FEDB400EB00A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF56232FEDB400EB00A3 /* AppDelegate.swift */; };
+		FF0CBF59232FEDB400EB00A3 /* VenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF58232FEDB400EB00A3 /* VenueViewController.swift */; };
+		FF0CBF5F232FEDB400EB00A3 /* WoltChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF5D232FEDB400EB00A3 /* WoltChallenge.xcdatamodeld */; };
+		FF0CBF61232FEDB500EB00A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF0CBF60232FEDB500EB00A3 /* Assets.xcassets */; };
+		FF0CBF64232FEDB500EB00A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF0CBF62232FEDB500EB00A3 /* LaunchScreen.storyboard */; };
+		FF0CBF6F232FEDB500EB00A3 /* WoltChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF6E232FEDB500EB00A3 /* WoltChallengeTests.swift */; };
+		FF0CBF7A232FEDB500EB00A3 /* WoltChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF79232FEDB500EB00A3 /* WoltChallengeUITests.swift */; };
+		FF0CBF8D232FF23400EB00A3 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF8C232FF23400EB00A3 /* VenueTableViewCell.swift */; };
+		FF0CBF8F232FF3B100EB00A3 /* VenueCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF8E232FF3B100EB00A3 /* VenueCellVM.swift */; };
+		FF0CBF91232FF3C200EB00A3 /* VenueVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF90232FF3C200EB00A3 /* VenueVM.swift */; };
+		FF0CBF94232FF7E300EB00A3 /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF93232FF7E300EB00A3 /* ReuseIdentifier.swift */; };
+		FF0CBF96233007EA00EB00A3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF95233007EA00EB00A3 /* CoreDataManager.swift */; };
+		FF0CBF9923300A7F00EB00A3 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF9823300A7F00EB00A3 /* Venue.swift */; };
+		FF0CBF9B23301B3800EB00A3 /* DataFetchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF9A23301B3800EB00A3 /* DataFetchManager.swift */; };
+		FF0CBF9D23302A6D00EB00A3 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CBF9C23302A6D00EB00A3 /* Results.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF0CBF6B232FEDB500EB00A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF0CBF4B232FEDB400EB00A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF0CBF52232FEDB400EB00A3;
+			remoteInfo = WoltChallenge;
+		};
+		FF0CBF76232FEDB500EB00A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF0CBF4B232FEDB400EB00A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF0CBF52232FEDB400EB00A3;
+			remoteInfo = WoltChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BF4AB9BC1FCE6E00F5C102F /* Pods_WoltChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoltChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EA9DEC7B1417BB57990838 /* Pods-WoltChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoltChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-WoltChallengeTests/Pods-WoltChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		887E3721A278736DF426EDF0 /* Pods_WoltChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoltChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A29A037F943E7147644732C /* Pods-WoltChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoltChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-WoltChallengeTests/Pods-WoltChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A43521B3A7F978C3E575E4A0 /* Pods_WoltChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoltChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B146729236DAB26832C3F1D6 /* Pods-WoltChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoltChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-WoltChallengeUITests/Pods-WoltChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B824737BDACD8C7EBE3EBCC6 /* Pods-WoltChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoltChallenge.release.xcconfig"; path = "Target Support Files/Pods-WoltChallenge/Pods-WoltChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		C09713AC75E3DC377883981E /* Pods-WoltChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoltChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-WoltChallengeUITests/Pods-WoltChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCBAF44DEFE51BD54F9B02F3 /* Pods-WoltChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoltChallenge.debug.xcconfig"; path = "Target Support Files/Pods-WoltChallenge/Pods-WoltChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		FF0CBF53232FEDB400EB00A3 /* WoltChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoltChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0CBF56232FEDB400EB00A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF0CBF58232FEDB400EB00A3 /* VenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewController.swift; sourceTree = "<group>"; };
+		FF0CBF5E232FEDB400EB00A3 /* WoltChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WoltChallenge.xcdatamodel; sourceTree = "<group>"; };
+		FF0CBF60232FEDB500EB00A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF0CBF63232FEDB500EB00A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF0CBF65232FEDB500EB00A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF0CBF6A232FEDB500EB00A3 /* WoltChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoltChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0CBF6E232FEDB500EB00A3 /* WoltChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoltChallengeTests.swift; sourceTree = "<group>"; };
+		FF0CBF70232FEDB500EB00A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF0CBF75232FEDB500EB00A3 /* WoltChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoltChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0CBF79232FEDB500EB00A3 /* WoltChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoltChallengeUITests.swift; sourceTree = "<group>"; };
+		FF0CBF7B232FEDB500EB00A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF0CBF8C232FF23400EB00A3 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
+		FF0CBF8E232FF3B100EB00A3 /* VenueCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCellVM.swift; sourceTree = "<group>"; };
+		FF0CBF90232FF3C200EB00A3 /* VenueVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueVM.swift; sourceTree = "<group>"; };
+		FF0CBF93232FF7E300EB00A3 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
+		FF0CBF95233007EA00EB00A3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FF0CBF9823300A7F00EB00A3 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		FF0CBF9A23301B3800EB00A3 /* DataFetchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchManager.swift; sourceTree = "<group>"; };
+		FF0CBF9C23302A6D00EB00A3 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF0CBF50232FEDB400EB00A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1275777F28426BD01210D2C /* Pods_WoltChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0CBF67232FEDB500EB00A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B54C86DA7D77C7AD2F7B51 /* Pods_WoltChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0CBF72232FEDB500EB00A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5B2107AAF864FF19E1158E /* Pods_WoltChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F19F3B7AFF6EB344EE54116 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCBAF44DEFE51BD54F9B02F3 /* Pods-WoltChallenge.debug.xcconfig */,
+				B824737BDACD8C7EBE3EBCC6 /* Pods-WoltChallenge.release.xcconfig */,
+				8A29A037F943E7147644732C /* Pods-WoltChallengeTests.debug.xcconfig */,
+				20EA9DEC7B1417BB57990838 /* Pods-WoltChallengeTests.release.xcconfig */,
+				C09713AC75E3DC377883981E /* Pods-WoltChallengeUITests.debug.xcconfig */,
+				B146729236DAB26832C3F1D6 /* Pods-WoltChallengeUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E55A2488DFDA6DAF422735CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BF4AB9BC1FCE6E00F5C102F /* Pods_WoltChallenge.framework */,
+				A43521B3A7F978C3E575E4A0 /* Pods_WoltChallengeTests.framework */,
+				887E3721A278736DF426EDF0 /* Pods_WoltChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF0CBF4A232FEDB400EB00A3 = {
+			isa = PBXGroup;
+			children = (
+				FF0CBF55232FEDB400EB00A3 /* WoltChallenge */,
+				FF0CBF6D232FEDB500EB00A3 /* WoltChallengeTests */,
+				FF0CBF78232FEDB500EB00A3 /* WoltChallengeUITests */,
+				FF0CBF54232FEDB400EB00A3 /* Products */,
+				6F19F3B7AFF6EB344EE54116 /* Pods */,
+				E55A2488DFDA6DAF422735CA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF0CBF54232FEDB400EB00A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CBF53232FEDB400EB00A3 /* WoltChallenge.app */,
+				FF0CBF6A232FEDB500EB00A3 /* WoltChallengeTests.xctest */,
+				FF0CBF75232FEDB500EB00A3 /* WoltChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF0CBF55232FEDB400EB00A3 /* WoltChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CBF56232FEDB400EB00A3 /* AppDelegate.swift */,
+				FF0CBF89232FEE7500EB00A3 /* Views */,
+				FF0CBF87232FEE5200EB00A3 /* ViewModels */,
+				FF0CBF88232FEE6300EB00A3 /* ViewControllers */,
+				FF0CBF8B232FEE9F00EB00A3 /* Managers */,
+				FF0CBF9723300A7400EB00A3 /* Objects */,
+				FF0CBF8A232FEE8D00EB00A3 /* Database */,
+				FF0CBF92232FF7D100EB00A3 /* Protocols */,
+				FF0CBF60232FEDB500EB00A3 /* Assets.xcassets */,
+				FF0CBF62232FEDB500EB00A3 /* LaunchScreen.storyboard */,
+				FF0CBF65232FEDB500EB00A3 /* Info.plist */,
+			);
+			path = WoltChallenge;
+			sourceTree = "<group>";
+		};
+		FF0CBF6D232FEDB500EB00A3 /* WoltChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CBF6E232FEDB500EB00A3 /* WoltChallengeTests.swift */,
+				FF0CBF70232FEDB500EB00A3 /* Info.plist */,
+			);
+			path = WoltChallengeTests;
+			sourceTree = "<group>";
+		};
+		FF0CBF78232FEDB500EB00A3 /* WoltChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CBF79232FEDB500EB00A3 /* WoltChallengeUITests.swift */,
+				FF0CBF7B232FEDB500EB00A3 /* Info.plist */,
+			);
+			path = WoltChallengeUITests;
+			sourceTree = "<group>";
+		};
+		FF0CBF87232FEE5200EB00A3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CBF8E232FF3B100EB00A3 /* VenueCellVM.swift */,
+				FF0CBF90232FF3C200EB00A3 /* VenueVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FF0CBF88232FEE6300EB00A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CBF58232FEDB400EB00A3 /* VenueViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FF0CBF89232FEE7500EB00A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CBF8C232FF23400EB00A3 /* VenueTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF0CBF8A232FEE8D00EB00A3 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CBF5D232FEDB400EB00A3 /* WoltChallenge.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		FF0CBF8B232FEE9F00EB00A3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CBF95233007EA00EB00A3 /* CoreDataManager.swift */,
+				FF0CBF9A23301B3800EB00A3 /* DataFetchManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FF0CBF92232FF7D100EB00A3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CBF93232FF7E300EB00A3 /* ReuseIdentifier.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FF0CBF9723300A7400EB00A3 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CBF9823300A7F00EB00A3 /* Venue.swift */,
+				FF0CBF9C23302A6D00EB00A3 /* Results.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF0CBF52232FEDB400EB00A3 /* WoltChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF0CBF7E232FEDB500EB00A3 /* Build configuration list for PBXNativeTarget "WoltChallenge" */;
+			buildPhases = (
+				672BB2CE5B65F84E493389F0 /* [CP] Check Pods Manifest.lock */,
+				FF0CBF4F232FEDB400EB00A3 /* Sources */,
+				FF0CBF50232FEDB400EB00A3 /* Frameworks */,
+				FF0CBF51232FEDB400EB00A3 /* Resources */,
+				03373C4C3CEF435AE4DA7260 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WoltChallenge;
+			productName = WoltChallenge;
+			productReference = FF0CBF53232FEDB400EB00A3 /* WoltChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF0CBF69232FEDB500EB00A3 /* WoltChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF0CBF81232FEDB500EB00A3 /* Build configuration list for PBXNativeTarget "WoltChallengeTests" */;
+			buildPhases = (
+				1A5AF8675C2B1CE578C91223 /* [CP] Check Pods Manifest.lock */,
+				FF0CBF66232FEDB500EB00A3 /* Sources */,
+				FF0CBF67232FEDB500EB00A3 /* Frameworks */,
+				FF0CBF68232FEDB500EB00A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF0CBF6C232FEDB500EB00A3 /* PBXTargetDependency */,
+			);
+			name = WoltChallengeTests;
+			productName = WoltChallengeTests;
+			productReference = FF0CBF6A232FEDB500EB00A3 /* WoltChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF0CBF74232FEDB500EB00A3 /* WoltChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF0CBF84232FEDB500EB00A3 /* Build configuration list for PBXNativeTarget "WoltChallengeUITests" */;
+			buildPhases = (
+				46B4168B17E1641466059D24 /* [CP] Check Pods Manifest.lock */,
+				FF0CBF71232FEDB500EB00A3 /* Sources */,
+				FF0CBF72232FEDB500EB00A3 /* Frameworks */,
+				FF0CBF73232FEDB500EB00A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF0CBF77232FEDB500EB00A3 /* PBXTargetDependency */,
+			);
+			name = WoltChallengeUITests;
+			productName = WoltChallengeUITests;
+			productReference = FF0CBF75232FEDB500EB00A3 /* WoltChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF0CBF4B232FEDB400EB00A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Ramon;
+				TargetAttributes = {
+					FF0CBF52232FEDB400EB00A3 = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					FF0CBF69232FEDB500EB00A3 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = FF0CBF52232FEDB400EB00A3;
+					};
+					FF0CBF74232FEDB500EB00A3 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = FF0CBF52232FEDB400EB00A3;
+					};
+				};
+			};
+			buildConfigurationList = FF0CBF4E232FEDB400EB00A3 /* Build configuration list for PBXProject "WoltChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF0CBF4A232FEDB400EB00A3;
+			productRefGroup = FF0CBF54232FEDB400EB00A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF0CBF52232FEDB400EB00A3 /* WoltChallenge */,
+				FF0CBF69232FEDB500EB00A3 /* WoltChallengeTests */,
+				FF0CBF74232FEDB500EB00A3 /* WoltChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF0CBF51232FEDB400EB00A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0CBF64232FEDB500EB00A3 /* LaunchScreen.storyboard in Resources */,
+				FF0CBF61232FEDB500EB00A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0CBF68232FEDB500EB00A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0CBF73232FEDB500EB00A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03373C4C3CEF435AE4DA7260 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoltChallenge/Pods-WoltChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoltChallenge/Pods-WoltChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WoltChallenge/Pods-WoltChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A5AF8675C2B1CE578C91223 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoltChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46B4168B17E1641466059D24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoltChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		672BB2CE5B65F84E493389F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoltChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF0CBF4F232FEDB400EB00A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0CBF91232FF3C200EB00A3 /* VenueVM.swift in Sources */,
+				FF0CBF59232FEDB400EB00A3 /* VenueViewController.swift in Sources */,
+				FF0CBF8D232FF23400EB00A3 /* VenueTableViewCell.swift in Sources */,
+				FF0CBF57232FEDB400EB00A3 /* AppDelegate.swift in Sources */,
+				FF0CBF9B23301B3800EB00A3 /* DataFetchManager.swift in Sources */,
+				FF0CBF9923300A7F00EB00A3 /* Venue.swift in Sources */,
+				FF0CBF8F232FF3B100EB00A3 /* VenueCellVM.swift in Sources */,
+				FF0CBF9D23302A6D00EB00A3 /* Results.swift in Sources */,
+				FF0CBF5F232FEDB400EB00A3 /* WoltChallenge.xcdatamodeld in Sources */,
+				FF0CBF96233007EA00EB00A3 /* CoreDataManager.swift in Sources */,
+				FF0CBF94232FF7E300EB00A3 /* ReuseIdentifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0CBF66232FEDB500EB00A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0CBF6F232FEDB500EB00A3 /* WoltChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0CBF71232FEDB500EB00A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF0CBF7A232FEDB500EB00A3 /* WoltChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF0CBF6C232FEDB500EB00A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF0CBF52232FEDB400EB00A3 /* WoltChallenge */;
+			targetProxy = FF0CBF6B232FEDB500EB00A3 /* PBXContainerItemProxy */;
+		};
+		FF0CBF77232FEDB500EB00A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF0CBF52232FEDB400EB00A3 /* WoltChallenge */;
+			targetProxy = FF0CBF76232FEDB500EB00A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF0CBF62232FEDB500EB00A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF0CBF63232FEDB500EB00A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF0CBF7C232FEDB500EB00A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF0CBF7D232FEDB500EB00A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF0CBF7F232FEDB500EB00A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBAF44DEFE51BD54F9B02F3 /* Pods-WoltChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WoltChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramon.WoltChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF0CBF80232FEDB500EB00A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B824737BDACD8C7EBE3EBCC6 /* Pods-WoltChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WoltChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramon.WoltChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF0CBF82232FEDB500EB00A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A29A037F943E7147644732C /* Pods-WoltChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WoltChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramon.WoltChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoltChallenge.app/WoltChallenge";
+			};
+			name = Debug;
+		};
+		FF0CBF83232FEDB500EB00A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20EA9DEC7B1417BB57990838 /* Pods-WoltChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WoltChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramon.WoltChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoltChallenge.app/WoltChallenge";
+			};
+			name = Release;
+		};
+		FF0CBF85232FEDB500EB00A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C09713AC75E3DC377883981E /* Pods-WoltChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WoltChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramon.WoltChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WoltChallenge;
+			};
+			name = Debug;
+		};
+		FF0CBF86232FEDB500EB00A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B146729236DAB26832C3F1D6 /* Pods-WoltChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WoltChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramon.WoltChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WoltChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF0CBF4E232FEDB400EB00A3 /* Build configuration list for PBXProject "WoltChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF0CBF7C232FEDB500EB00A3 /* Debug */,
+				FF0CBF7D232FEDB500EB00A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF0CBF7E232FEDB500EB00A3 /* Build configuration list for PBXNativeTarget "WoltChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF0CBF7F232FEDB500EB00A3 /* Debug */,
+				FF0CBF80232FEDB500EB00A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF0CBF81232FEDB500EB00A3 /* Build configuration list for PBXNativeTarget "WoltChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF0CBF82232FEDB500EB00A3 /* Debug */,
+				FF0CBF83232FEDB500EB00A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF0CBF84232FEDB500EB00A3 /* Build configuration list for PBXNativeTarget "WoltChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF0CBF85232FEDB500EB00A3 /* Debug */,
+				FF0CBF86232FEDB500EB00A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF0CBF5D232FEDB400EB00A3 /* WoltChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF0CBF5E232FEDB400EB00A3 /* WoltChallenge.xcdatamodel */,
+			);
+			currentVersion = FF0CBF5E232FEDB400EB00A3 /* WoltChallenge.xcdatamodel */;
+			path = WoltChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF0CBF4B232FEDB400EB00A3 /* Project object */;
+}
