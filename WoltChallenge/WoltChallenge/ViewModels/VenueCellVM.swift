@@ -10,11 +10,9 @@ import Foundation
 
 class VenueCellVM {
 
-    private var coreDataManager: CoreDataManageable
     private var venue: Venue
 
-    init(coreDataManager: CoreDataManageable, venue: Venue) {
-        self.coreDataManager = coreDataManager
+    init(venue: Venue) {
         self.venue = venue
     }
 
@@ -34,9 +32,8 @@ class VenueCellVM {
         return venue.imageUrl
     }
 
-    func saveVenueFavorite(status: Bool) {
+    func setFavorited(status: Bool) {
         venue.isFavorited = status
-        coreDataManager.update(venue)
     }
 
 }

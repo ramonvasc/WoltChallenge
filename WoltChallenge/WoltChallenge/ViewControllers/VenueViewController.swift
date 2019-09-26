@@ -62,10 +62,19 @@ extension VenueViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellViewModel = VenueCellVM(coreDataManager: CoreDataManager(), venue: viewModel.venues[indexPath.row])
-        let cell = VenueTableViewCell(viewModel: cellViewModel, style: .default, reuseIdentifier: VenueTableViewCell.reuseIdentifier)
+        let cellViewModel = VenueCellVM(venue: viewModel.venues[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: VenueTableViewCell.reuseIdentifier, for: indexPath) as! VenueTableViewCell
+        cell.viewModel = cellViewModel
         cell.loadCell()
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? VenueTableViewCell else {
+            return
+        }
+        cell.tapFavorite()
+        viewModel.saveVenueFavorite(status: cell.isHighlighted, at: indexPath.row)
     }
 
 }

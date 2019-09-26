@@ -11,7 +11,7 @@ import SnapKit
 
 class VenueTableViewCell: UITableViewCell {
 
-    var viewModel: VenueCellVM
+    var viewModel: VenueCellVM?
 
     lazy var listImageView: UIImageView = {
         let listImageView = UIImageView(frame: .zero)
@@ -45,21 +45,8 @@ class VenueTableViewCell: UITableViewCell {
         favoritedImageView.tintColor = .black
         favoritedImageView.highlightedImage = UIImage(named: "favorite_full")?.withRenderingMode(.alwaysTemplate)
         favoritedImageView.image = UIImage(named: "favorite")?.withRenderingMode(.alwaysTemplate)
-        favoritedImageView.isUserInteractionEnabled = true
         return favoritedImageView
     }()
-
-    init(viewModel: VenueCellVM, style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        self.viewModel = viewModel
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        addViews()
-        setupViews()
-        setupActions()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
 
     private func setupViews() {
         selectionStyle = .none
@@ -99,23 +86,22 @@ class VenueTableViewCell: UITableViewCell {
         addSubview(favoritedImageView)
     }
 
-    private func setupActions() {
-        let tapAction = UITapGestureRecognizer(target: self, action: #selector(tapFavorite))
-        favoritedImageView.addGestureRecognizer(tapAction)
-    }
-
-    @objc func tapFavorite() {
+    func tapFavorite() {
         UIView.transition(with: favoritedImageView, duration: 1, options: .transitionCrossDissolve, animations: {
             self.favoritedImageView.isHighlighted = !self.favoritedImageView.isHighlighted
         }, completion: nil)
-        viewModel.saveVenueFavorite(status: favoritedImageView.isHighlighted)
+        viewModel?.setFavorited(status: favoritedImageView.isHighlighted)
     }
 
     func loadCell() {
-        nameLabel.text = viewModel.venueName()
-        shortDescriptionLabel.text = viewModel.venueDescription()
-        listImageView.kf.setImage(with: URL(string: viewModel.venueImageUrl()))
-        favoritedImageView.isHighlighted = viewModel.isFavorited()
+        addViews()
+        setupViews()
+        nameLabel.text = viewModel?.venueName()
+        shortDescriptionLabel.text = viewModel?.venueDescription()
+        if let venueImageUrl = viewModel?.venueImageUrl() {
+            listImageView.kf.setImage(with: URL(string: venueImageUrl))
+        }
+        favoritedImageView.isHighlighted = viewModel?.isFavorited() ?? false
     }
 
 }

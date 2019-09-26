@@ -65,6 +65,11 @@ class VenueVM: NSObject {
         currentLocation = currentLocation >= 9 ? 0 : currentLocation + 1
     }
 
+    func saveVenueFavorite(status: Bool, at index: Int) {
+        venues[index].isFavorited = status
+        coreDataManager.update(venues[index])
+    }
+
     @objc func setupLocationManager() {
         //keep the app refreshing the venues even when the app goes to background
         locationManager.allowsBackgroundLocationUpdates = true
